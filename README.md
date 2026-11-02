@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://ads.tiktok.com/business/creativecenter/topads/7686267188656750612/pc/en?period=30",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -231,7 +231,7 @@ response = requests.get(
     params={
         "query": "https://ads.tiktok.com/business/creativecenter/inspiration/topads/pc/en?period=30&region=AR",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
